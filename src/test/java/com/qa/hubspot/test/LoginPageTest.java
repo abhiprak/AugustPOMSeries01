@@ -23,7 +23,7 @@ public class LoginPageTest {
 	LoginPage loginPage;
 	
 	
-	@BeforeTest
+	@BeforeTest(alwaysRun=true)
 	public void setUp() {
 		basePage = new BasePage();
 		prop = basePage.init_properties();
@@ -35,7 +35,7 @@ public class LoginPageTest {
 		
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, groups="sanity")
 	public void verifyLoginPageTitleTest() throws InterruptedException {
 		//Thread.sleep(5000);
 		String title=loginPage.getPageTitle();
@@ -74,11 +74,11 @@ public class LoginPageTest {
 	
 	
 	
-	@AfterTest
+	@AfterTest(alwaysRun=true)
 	public void tearDown() {
-		if(driver!=null) {
+		//if(driver!=null) {
 			driver.quit();
-		}
+		//}
 	}
 
 }

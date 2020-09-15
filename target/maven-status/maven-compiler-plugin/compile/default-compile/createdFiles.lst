@@ -1,5 +1,8 @@
 com\qa\hubspot\utils\AppConstants.class
 com\qa\hubspot\pages\LoginPage.class
+com\qa\hubspot\Listeners\TesultsListener.class
+com\qa\hubspot\utils\OptionsManager.class
+com\qa\hubspot\Listeners\ExtentReportListener.class
 com\qa\hubspot\pages\BasePage.class
 com\qa\hubspot\pages\HomePage.class
 com\qa\hubspot\utils\Credentials.class

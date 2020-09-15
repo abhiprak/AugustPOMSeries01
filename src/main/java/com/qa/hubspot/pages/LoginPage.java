@@ -11,7 +11,7 @@ public class LoginPage extends BasePage {
 	WebDriver driver;
 	ElementUtil elementUtil;
 	
-	//By Locators
+	//By Locators: This is Object Repository
 	
 	By username = By.id("username");
 	By password = By.id("password");
@@ -40,7 +40,8 @@ public class LoginPage extends BasePage {
 	//	driver.findElement(username).sendKeys(uname);
 	//	driver.findElement(password).sendKeys(pwd);
 	//	driver.findElement(login).click();
-		driver.navigate().refresh();
+	//	driver.navigate().refresh();
+	//	elementUtil.waitForElementPresent(username);
 		elementUtil.doSendKeys(username, uname);
 		elementUtil.doSendKeys(password, pwd);
 		elementUtil.doClick(login);
